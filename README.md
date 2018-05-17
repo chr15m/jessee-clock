@@ -1,5 +1,7 @@
 Clock for art installation for my friend Jessee.
 
+![Photo of the clock](./clock.jpg)
+
 ### Bill of parts
 
  * Raspberry Pi.
