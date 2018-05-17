@@ -1,0 +1,13 @@
+#!/bin/sh
+
+if [ "$1" = "" ]
+then
+  echo "Usage: `basename $0` HOST [--from]"
+else
+  if [ "$2" == "--from" ]
+  then
+    rsync -avz tc@$1:~/jessee-clock/ .
+  else
+    rsync -avz ./ tc@$1:~/jessee-clock
+  fi
+fi
